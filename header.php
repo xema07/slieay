@@ -22,13 +22,13 @@
             <input type="checkbox" id="menu-navi">
             <label for="menu-navi"><img id="navi-img" src="<?php $this->options->themeUrl('img/Category.png'); ?>" alt="导航" width="30px"></label>
             <div id="navi">
-                <hr>
+                <hr id="#hr-top">
                     <ul id="navi-menu">
                         <li><a href="<?php $this->options->siteUrl(); ?>">首页</a></li>
                         <?php $this->widget('Widget_Contents_Page_List')
                                    ->parse('<li><a href="{permalink}">{title}</a></li>'); ?>
                     </ul>
-                <hr>
+                <hr id="hr-bottom">
             </div>
         </div>
     </div>

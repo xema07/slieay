@@ -4,13 +4,21 @@ body {
     padding-right:20%;
     background:#F6F6F3;
 }
-/* @font-face {
+@font-face {
     font-family:"PAC-FONT.TTF";
-    src:url("font/PAC-FONT.TTF");
-} */
+    src:url("http://oxajtdreb.bkt.clouddn.com/PAC-FONT.TTF");
+}
+@font-face {
+    font-family:"hanyi.ttf";
+    src:url("http://oxajtdreb.bkt.clouddn.com/hanyi.ttf");
+}
+@font-face {
+    font-family:"tongxin.ttf";
+    src:url("http://oxajtdreb.bkt.clouddn.com/tongxin.ttf");
+}
 @font-face {
     font-family:"shishangzhonghe.ttf";
-    src:url("font/shishangzhonghe.ttf");
+    src:url("http://oxajtdreb.bkt.clouddn.com/shishangzhonghe.ttf");
 }
 a {
     color:#6E7173;
@@ -46,6 +54,7 @@ pre,xmp {
 /* header start */
 .header {
     margin-bottom:20px;
+    font-family:"hanyi.ttf";    
 }
 .header p {
     text-align:center;
@@ -76,25 +85,38 @@ img {
 }
 #navi {
     display:none;
-    width:650px;
+    width:100%;
     margin:0 auto;
 }
 #navi ul {
+    margin:0;
+    padding:0;
+    padding-top:25px;
+    padding:25px;
     list-style-type:none;
-    text-align:center;
     display:inline-block;
 }
 #navi ul li {
+    font-size:25px;
     display:inline;
-    float:left;
-    margin-left:5px;
-    margin-right:5px;
+    margin-left:10px;
+    margin-right:10px;
+}
+li {
+    margin:0;
+    padding:0;
+}
+ol {
+    margin:0;
+    padding:0;
+    list-style-type: none;
 }
 #navi hr {
     opacity:0.3;
     clear: both;
 }
 #navi-menu li a {
+    color:#565352;
     text-decoration:none;
 }
 /* header end */
@@ -131,9 +153,11 @@ img {
 .index-content {
     margin-top:20px;
     margin-bottom:20px;
+    font-family:"hanyi.ttf";
+    opacity: 0.9;
+    color:#333333;
 }
 .change a {
-    border: 2px solid #A9A9A9;
     text-decoration: none;
 }
 #next {
@@ -144,6 +168,8 @@ img {
 #post-title {
     font-size:27px;
     text-align:center;
+    opacity: 0.8;
+    font-family:"hanyi.ttf";
 }
 .post-info {
     color:#303030;
@@ -168,6 +194,26 @@ img {
     text-align:center;
     margin-top:100px;
     margin-bottom:0;
+    font-family:"shishangzhonghe.ttf";
+}
+.footer a {
+    text-decoration: none;    
 }
 /* footer end */
-
+/* media start */
+@media screen and (max-width: 640px) {
+    body {
+        padding-left:5%;
+        padding-right:5%;
+    }
+    #navi ul {
+        padding-top:10px;
+    }
+    #navi ul li {
+        display: block;
+    }
+    #hr-bottom {
+        margin-top:10px;
+    }
+}
+/* media end */

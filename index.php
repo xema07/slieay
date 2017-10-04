@@ -3,7 +3,7 @@
  * 极简的typecho单栏主题。
  * @package  
  * @author Xema
- * @version 1.0
+ * @version 2.0
  * @link http://xema.ink
  */
  if (!defined('__TYPECHO_ROOT_DIR__')) exit;

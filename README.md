@@ -23,21 +23,7 @@ Slieay这个名字，也是随便想的，因为比较洋气，虽然不会读�
 
 
 
-Ps:如果你的博客名字是英文的话，建议你在style.css将
-```
-@font-face {
-    font-family:"PAC-FONT.TTF";
-    src:url("font/PAC-FONT.TTF");
-} 
-```
-还有`.header p {`下的`font-family:"PAC-FONT.TTF";`注释去掉，然后将
-```
-@font-face {
-    font-family:"shishangzhonghe.ttf";
-    src:url("font/shishangzhonghe.ttf");
-}
-```
-`.header p {`下的`font-family:"shishangzhonghe.ttf";`给注释了，这样显示的逼格比较高
+Ps:如果你的博客名字是英文的话，建议你在style.css将`.header p {`下的`font-family:"PAC-FONT.TTF";`注释去掉，然后将`font-family:"shishangzhonghe.ttf";`给注释了，这样显示的逼格比较高
 
 
 

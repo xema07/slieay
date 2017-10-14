@@ -1,7 +1,6 @@
 body {
     margin:0 auto;
-    padding-left:20%;
-    padding-right:20%;
+    padding:0 20% 0 20%;
     background:#F6F6F3;
 }
 @font-face {
@@ -13,10 +12,6 @@ body {
     src:url("http://oxajtdreb.bkt.clouddn.com/hanyi.ttf");
 }
 @font-face {
-    font-family:"tongxin.ttf";
-    src:url("http://oxajtdreb.bkt.clouddn.com/tongxin.ttf");
-}
-@font-face {
     font-family:"shishangzhonghe.ttf";
     src:url("http://oxajtdreb.bkt.clouddn.com/shishangzhonghe.ttf");
 }
@@ -25,53 +20,44 @@ a {
     text-decoration:underline;
     margin:3px;
 }
-a:visited,a:hover {
-    color:auto;
+a:visited,a:hover,a:focus{
     outline:solid 2px #3F3F3F;
 }
-a:focus {
-    outline:auto;
+.header p a:link,.header p a:visited,.header p a {
+    color:#000000;
+    outline:none;
+}
+.header p a:link,.header p a:visited,.header p a,.footer a,.tags a,.change a,.index-post h1 a,#navi-menu li a {
+    text-decoration:none;
 }
 blockquote,q {
-    background-color:#F5F5F5;
+    background:#F5F5F5;
     opacity:0.4;
     height:auto;
     padding:10px;
 }
-q:before,q:after {
-    content:'';
-}
 pre,code,xmp {
-    background-color:#3F3F3F;
+    background:#3F3F3F;
     padding:5px;
     font-size:12px;
     color:#FFFFFF;
 }
-pre,xmp {
-    white-space:pre-wrap;
-    word-wrap:break-word;
-}
-/* header start */
+/* header */
 .header {
     margin-bottom:20px;
-    font-family:"hanyi.ttf";    
+    text-align:center;
 }
 .header p {
-    text-align:center;
     font-size:45px;
-    /* font-family:"PAC-FONT.TTF"; */
-    font-family: "shishangzhonghe.ttf";
+    font-family:"PAC-FONT.TTF";
+    /* font-family: "shishangzhonghe.ttf"; */
 }
 .header p a:link,.header p a:visited,.header p a {
     color:#000000;
-    text-decoration:none;
     outline:none;
 }
-.navi {
-    text-align:center;
-}
 img {
-    max-width: 100%;
+    max-width:100%;
     transition:all 0.5s;
 }
 #menu-navi {
@@ -86,125 +72,88 @@ img {
 #navi {
     display:none;
     width:100%;
-    margin:0 auto;
 }
 #navi ul {
     margin:0;
-    padding:0;
-    padding-top:25px;
-    padding:25px;
-    list-style-type:none;
+    padding:15px;
+    list-style:none;
     display:inline-block;
 }
 #navi ul li {
-    font-size:25px;
+    font-size:20px;
     display:inline;
-    margin-left:10px;
-    margin-right:10px;
-}
-li {
-    margin:0;
-    padding:0;
-}
-ol {
-    margin:0;
-    padding:0;
-    list-style-type: none;
+    margin:0 10px 0 10px;
 }
 #navi hr {
     opacity:0.3;
-    clear: both;
 }
 #navi-menu li a {
     color:#565352;
-    text-decoration:none;
 }
-/* header end */
-/* index start */
+/* index */
 .index-post {
     margin:0 auto;
     text-align:center;
 }
-.index-post h1 a{
-    text-decoration: none;
-}
 .index-post h1 a:hover {
     color:#D1D1D1;
-    opacity: 2;
-    outline: none;
-}
-.index-post h1 a:focus {
-    outline: auto;
+    opacity:2;
+    outline:none;
 }
 .index-post h1 {
-    margin-top:3px; 
-    margin-bottom:3px;
+    margin:3px 0 3px 0;
 }
 .titile-info {
     color:#3F3F3F;
     font-size:13px;
 }
 #hr {
-    margin-top:30px;
-    margin-bottom:30px;
+    margin:30px 0 30px 0;
     opacity:0.5;
     font-size:10px;
 }
 .index-content {
-    margin-top:20px;
-    margin-bottom:20px;
-    font-family:"hanyi.ttf";
-    opacity: 0.9;
+    margin:20px 0 20px 0;
+    opacity:0.9;
     color:#333333;
-}
-.change a {
-    text-decoration: none;
 }
 #next {
     float:right;
 }
-/* index end */
-/* post start */
+/* post */
 #post-title {
     font-size:27px;
-    text-align:center;
-    opacity: 0.8;
+    opacity:0.8;
     font-family:"hanyi.ttf";
 }
 .post-info {
     color:#303030;
     margin-top:3px;
     font-size:14px;
+}
+#post-title,.post-info{
     text-align:center;
 }
-.tags a{
+.tags a {
     background:#F5F5F5;
     border:1px solid;
-    text-decoration: none;
     padding:3px;
     display:inline-block;
 }
 .tags a:before {
     content:'#';
 }
-/* post end */
-/* footer start */
+/* footer */
 .footer {
-    clear: both;
+    clear:both;
     text-align:center;
-    margin-top:100px;
-    margin-bottom:0;
+    margin:100px 0 10px 0;
     font-family:"shishangzhonghe.ttf";
 }
-.footer a {
-    text-decoration: none;    
-}
-/* footer end */
-/* media start */
+/* media */
 @media screen and (max-width: 640px) {
     body {
-        padding-left:5%;
-        padding-right:5%;
+        padding:0 5% 0 5%;
     }
     #navi ul {
         padding-top:10px;
@@ -216,4 +165,3 @@ ol {
         margin-top:10px;
     }
 }
-/* media end */
